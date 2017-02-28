@@ -5,9 +5,9 @@
 .info_bg img {
 	margin-left: -26px;
 }
-#get_involved, #donate .info_text {
+/*#get_involved, #donate .info_text {
 	margin-top: -49px;
-}
+}*/
 .sponsor {
 	margin-left: -78px;
 }
@@ -87,6 +87,7 @@
 .left {
 	margin-left: -15px;
 }
+
 }
 
 @media (min-width: 991px) {
@@ -97,7 +98,7 @@
 
 @media(max-width: 1200px) and (min-width: 992px) {
   .last{
-     margin-left:77px; 
+     margin-left:77px;
  }
 }
 

@@ -4,7 +4,7 @@
 
 #about {
 	background: #73c38a;
-	padding: 50px 0px 80px;
+	padding: 140px 0px 80px;
 }
 #about .smile_heading {
 	color: #fff;
@@ -13,6 +13,23 @@
 #about .smile_para {
 	margin: 17px 0px 0px 18px;
 	margin-top: 17px;
+}
+.co-founder{
+  margin-bottom: 40px;
+  text-align: center;
+}
+.co-founder h3,p{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.co-founder p{
+  font-weight: 500;
+}
+.co-founder img{
+  width:260px;
+  height: 250px;
+  border:3px solid #fff;
 }
 /*ABOUT*/
 
