@@ -14,11 +14,11 @@
             <!-- navbar-header -->
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{% url 'home' %}">home</a></li>
-                    <li><a href="#smiley_info">about us</a></li>
-                    <li><a href="{% url 'get_involved' %}">get involved</a></li>
-                    <li><a href="{% url 'contact_us' %}">contact us</a></li>
-                    <li><a href="{% url 'donate' %}">donate</a></li>
+                    <li class="{% if request.resolver_match.url_name == "home" %}active{% endif %}"><a href="{% url 'home' %}">home</a></li>
+                    <li class=" {% if request.resolver_match.url_name == "about_us" %}active{% endif %}"><a href="{% url 'about_us' %}">about us</a></li>
+                    <li class=" {% if request.resolver_match.url_name == "get_involved" %}active{% endif %}"><a href="{% url 'get_involved' %}">get involved</a></li>
+                    <li class=" {% if request.resolver_match.url_name == "contact_us" %}active{% endif %}"><a href="{% url 'contact_us' %}">contact us</a></li>
+                    <li class=" {% if request.resolver_match.url_name == "donate" %}active{% endif %}"><a href="{% url 'donate' %}">donate</a></li>
                 </ul>
             </div>
             <!-- collapse navbar-collapse -->

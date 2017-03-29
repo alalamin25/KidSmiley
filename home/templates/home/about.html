@@ -1,51 +1,63 @@
 {% extends 'home/base.html' %}
 {% load staticfiles %}
+{% block extra_style %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}"/>
+
+{% endblock %}
 {% block content %}
 
 
-<!--=====================Start of about=================-->
-<section id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9 col-md-6">
-      <div class="col-md-12 about_text1">
-        <h1 class="smile_heading">The Problem</h1>
-        <p class="smile_para">In most developing countries,parents struggles every day to fulfill their children’s
-          basic needs such as a meal twice a day and a roof over their head; a nice outfit for a special occasion is often the last thing on their mind. </p>
-      </div>
-      <div class="col-md-12 about_text_2">
-        <h1 class="smile_heading">Our Mission</h1>
-        <p class="smile_para">KidSmiley will help children from such marginal communities join in the festivities with the confidence
-          they need all the while trying to foster an environment of sharing and connecting among different religious, cultural and social groups. </p>
-      </div>
-    </div>
+    <!--=====================Start of about=================-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-6">
+                    <div class="col-md-12 about_text1">
+                        <h1 class="smile_heading">The Problem</h1>
+
+                        <p class="smile_para">In most developing countries,parents struggles every day to fulfill their
+                            children’s
+                            basic needs such as a meal twice a day and a roof over their head; a nice outfit for a
+                            special occasion is often the last thing on their mind. </p>
+                    </div>
+                    <div class="col-md-12 about_text_2">
+                        <h1 class="smile_heading">Our Mission</h1>
+
+                        <p class="smile_para">KidSmiley will help children from such marginal communities join in the
+                            festivities with the confidence
+                            they need all the while trying to foster an environment of sharing and connecting among
+                            different religious, cultural and social groups. </p>
+                    </div>
+                </div>
 
 
-    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" style="margin-top:80px;">
-          <div class="co-founder">
-              <figure>
-                <img src="images/ishrat.jpg" alt="co-founder"/>
-            </figure>
-            <figcaption>
-                 <h3 class="text-center">Israt Jahan</h3>
-                 <p class="text-center">Co-founder,KidSmiley</p>
-            </figcaption>
-          </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" style="margin-top:80px;">
+                    <div class="co-founder">
+                        <figure>
+                            <img src="{% static 'images/ishrat.jpg' %}" alt="co-founder"/>
+                        </figure>
+                        <figcaption>
+                            <h3 class="text-center">Israt Jahan</h3>
 
-          <div class="co-founder">
-              <figure>
-                <img src="images/sajal.jpg" alt="co-founder"/>
-            </figure>
-            <figcaption>
-                  <h3 class="text-center">Sayeed Sajal</h3>
-                 <p class="text-center">Co-founder,KidSmiley</p>
-            </figcaption>
-          </div>
-    </div>
-    </div>
-  </div>
-</section>
-<!--=====================End of about=================-->
+                            <p class="text-center">Co-founder,KidSmiley</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="co-founder">
+                        <figure>
+                            <img src="{% static 'images/sajal.jpg' %}" alt="co-founder"/>
+                        </figure>
+                        <figcaption>
+                            <h3 class="text-center">Sayeed Sajal</h3>
+
+                            <p class="text-center">Co-founder,KidSmiley</p>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================End of about=================-->
 
 
 
